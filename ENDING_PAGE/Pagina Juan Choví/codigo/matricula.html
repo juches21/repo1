@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="icon" href="img/fav.ico">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S.O.M.A.</title>
+  <link rel="stylesheet" type="text/css" href="css/bulma.min.css">
+</head>
+<body background= "fondo.jpg"> <!-- se que se tendria que poner en el css , pero no e encontrado el modo de que funcionara -->
+
+
+  
+      <MARQUEE> 𝄢 2/4 ♫ ♯♩ | 𝅗𝅥 | ♫ ♫ | ♩ ♯♩ | ♫ ♫ | 𝅗𝅥 | ♫ ♫ | 𝅗𝅥 | ♩ ♫ | ♫ ♫ | 𝅗𝅥 | ♫ ♩ | ♩ ♯♩ | Aprende Musica Facil Con Nosotros | 𝅗𝅥 | ♫ ♫ | ♩ ♯♩ | ♫ ♫ | 𝅗𝅥 | ♫ ♫ | 𝅗𝅥 | ♩ ♫ | ♫ ♫ | 𝅗𝅥 | ♫ ♩ | ♩ ♯♩ | </MARQUEE>
+    
+
+
+<nav class="navbar is-primary" aria-label="main navigation">
+  <div class="navbar-brand">
+    
+      <img src="img/logo.png" width="100" height="28" alt="logo">
+   
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="inicio.html">
+        inicio
+      </a>
+
+      <a class="navbar-item" href="instrumentos.html">
+        tipos de instrumentos
+      </a>
+      <a class="navbar-item" href= "compases.html">
+        Los compases
+      </a>
+      <a class="navbar-item" href="clave.html">
+        Tipos de clave 
+      </a>
+      <a class="navbar-item" href="escalas.html">
+        Escalas musicales
+      </a>
+      <a class="navbar-item" href="matricula.html">
+        Matriculación
+      </a>
+
+    
+      </div>
+    </div>
+
+
+  
+    
+
+
+</nav>
+
+<div class="tile is-ancestor">
+  <div class="tile is-4 is-vertical is-parent">
+    <div class="tile is-child box">
+      <p class="title">Profesores</p>
+      <p>Entre nuestras filas contamos a profesores de alto rango con un gran historial de logros en el ámbito musical, aunque resaltaremos a tres de ellos :
+      <table>
+        <tr>
+          <td><br><b>Juan choví : </b> actual director de la banda de S.O.M.A. y profesor de Flauta travesera , recibió un  premio en mención a sus altas notas en <a href="https://rcsmm.eu/"> el Real Conservatorio Superior de Música de Madrid </a> y con cuatro primeros premiso dirigiendo a la S.O.M.A.</td>
+          <td><img src="img/dir/JuanChovi.png" width="2000" alt="juan"></td>
+      </table>
+       <table>
+        <tr>
+          <td><br><b>Luca Sironi : </b> actual director de la escuela musical de la S.O.M.A. y profesor de percusión, impartió clases en <a href="https://mestreacasa.gva.es/web/cpmvalencia"> el Conservatorio Profesional de Música de Valencia </a></td>
+          <td><img src="img/dir/Luca.png" width="2000" alt="luca"></td>
+      </table>
+
+       <table>
+        <tr>
+          <td><br><b>Fernando Camino :</b> actual profesor de canto de la S.O.M.A y profesor de trompa , fue trompa 1º fija en <a href="https://osm.es/"> la orquesta sinfónica de Madrid </a> y en <a href="https://www.palauvalencia.com/sobre-la-orquesta/"> la Orquesta sinfónica de Valencia </a></td>
+          <td><img src="img/dir/Rangu.png" width="2000" alt="rangu"></td>
+      </table>
+
+
+
+      
+    
+
+    </div>
+  </div>
+  <div class="tile is-parent ">
+    <div class="tile is-child box parti">
+      <p class="title">Solicitud</p>
+
+
+<div class="row g-3">
+  <p>Datos personales:
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Nombre" aria-label="nombre">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Apellidos" aria-label="apellidos">
+  </div>
+</div>
+
+<div class="row g-3">
+  <div class="col">
+    <input type="email" class="form-control" placeholder="Correo de contacto" aria-label="email">
+  </div>
+</div>
+<div class="row g-3">
+  <div class="col">
+    <p>En que categoría te quieres matricular</p>
+    <select name="transporte" class="form-control" aria-label="eleccion">
+
+        <option>Solfeo</option>
+
+        <option>Canto</option>
+
+        <option>Instrumento</option>
+
+        </select>
+  </div>
+</div>
+<div class="row g-3">
+  <div class="col">
+    <p>Quien quieres que te imparta la clase ( en caso de ser instrumental el profesor solo puede impartir clase de el instrumento indicado en su nombre )</p>
+    <select name="transporte" class="form-control" aria-label="eleccion">
+<option>----</option>
+        <option>Juan Choví (Flauta Travesera)</option>
+
+        <option>Marti Carreras (Flauta Travesera)</option>
+
+        <option>Salma Cabanillas (Flauta Travesera)</option>
+
+        <option>Maria Villaverde (Flauta Travesera)</option>
+
+
+        <option>Luca Sironi (Percusion)</option>
+
+        <option>Juan Silvestre (Percusion)</option>
+
+
+        <option>Fernando Camino (Trompa)</option>
+
+        <option>Pablo Benavides (Trompa)</option>
+
+        <option>Vanesa Lora (Trompa)</option>
+
+
+
+        <option>Noelia Ojeda (Clarinete)</option>
+
+        <option>Modesta Laguna (Clarinete)</option>
+
+
+
+        <option>Noe Garcia (Oboe)</option>
+
+
+
+        <option>Mila Tasos (Cuerda)</option>
+
+        <option>Tomas Choví (Cuerda)</option>
+
+        <option>Antonio Rueda (Cuerda)</option>
+
+        </select>
+  </div>
+
+</div>
+<button type="submit" class="btn btn-primary">Enviar Datos </button>
+
+      
+    </div>
+
+  </div>
+
+
+</div>
+
+<div class="tile is-parent">
+      <article class="tile is-child notification is-info">
+        <p class="title">S.O.M.A.</p>
+        <p class="subtitle"></p>
+        <div class="content">
+          <p>Cree esta pagina haciendo uso de mi conocimiento musical , se que tiene fallos y que la validación no la cumple , pero no se como solucionarlo porque al mínimo cambio la plantilla se distorsiona </p>
+          <br><p>El menú y las losas : https://bulma.io/
+          <p>El formulario: https://getbootstrap.com/
+
+        </div>
+      </article>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

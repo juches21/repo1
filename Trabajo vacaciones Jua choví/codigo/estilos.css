@@ -1,0 +1,23 @@
+body{
+	background-color: #13B441
+}
+div{
+	border: 5px solid;
+	margin:auto;
+	
+
+}
+
+#titulo {
+	border: 5px solid;
+	text-align: center;
+	margin:auto;
+	background-color: #02942C
+}
+
+#intruciones{
+	font-size:30px;
+}
+table{
+	margin: 50px;
+}

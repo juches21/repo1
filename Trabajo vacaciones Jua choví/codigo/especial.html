@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+
+</script>
+</head>
+<body>
+<table>
+	<tr>
+		<div id="titulo">
+		<h1> El juego de piedra , papel y tigera </h1>
+		<h2> edicion especial</h2>
+	</div>
+	</tr>
+
+
+
+	<tr>
+		<td>
+			<div>
+						<br><h1> Normas</h1>
+						<p id="intruciones"> escoge una de las cinco opciones </p>
+						<p id="intruciones"> luego dale al boton "enviar"  </p>
+						<p id="intruciones"> la cpu generrara otra eleccion aleatoria </p>
+						<p id="intruciones"> el resultado de cada enfrentamiento se mostrara por pantalla </p>
+						<p id="intruciones"> pero en caso de querer ver el resultado de todas las partidas </p>
+						<p id="intruciones"> se tiene que pulsar el boton de "resultados"</p>
+						<p id="intruciones"> y un listado con todoa los resultados se mostrara en la consola</p>
+			</div>
+		</td>
+		<td>
+			<div>
+			<form name="elc">
+				<br><input type="radio" name="eleccion" id="piedra" value="piedra" > <img src="imagenes/piedra.png" height="90px">
+				<br><input type="radio" name="eleccion" id="papel" value="papel"> <img src="imagenes/papel.png" height="90px">
+				<br><input type="radio" name="eleccion" id="tijeras" value="tijeras"> <img src="imagenes/tijeras.png" height="90px">
+				<br><input type="radio" name="eleccion" id="lagarto" value="lagarto"><img src="imagenes/lagarto.png" height="90px">
+				<br><input type="radio" name="eleccion" id="spock" value="spock"><img src="imagenes/spock.png" height="90px">
+				</div>
+		</td>
+		<td>
+				
+					<p><h2 id="titulo">GUIA:
+					<p><img src="imagenes/especial.png" height="500px">
+				</h2>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				<div>
+				<br><button type="button" onclick="recogerDatos()">enviar</button>
+				<button type="button" onclick="recogerREsultados()">resultados</button>
+				<a href="../intro.html"><input type="button" value="inicio"></a>
+			
+		</td>
+		
+	</tr>
+	<tr>
+		<td>
+			<div>
+				<br >Este es un proyecto realizado por Juan Choví Estarelles de 1ºB,no es perfecto, pero he intentado utilizar todo mi conocimiento para hacer un buen trabajo, todos los dibujos han sido hechos por mí, espero que sea de su agrado, Choví®
+			</div>
+		</td>
+	</tr>
+</form>
+	
+</table>
+
+
+
+	<script type="text/javascript">
+		
+// 1 = piedra
+// 2 = papel
+// 3 = tijera
+// 4 = lagarto
+// 5 = spock 
+var cuentas = []
+function recogerDatos(){
+	let nombre= " ";
+	let piedra = document.getElementById('piedra')
+	let papel = document.getElementById('papel')
+	let tijeras= document.getElementById("tijeras")
+	let lagarto= document.getElementById("lagarto")
+	let spock= document.getElementById("spock")
+var cpu = Math.floor(Math.random(1)*(5))+1
+// console.log(cpu)
+	if (piedra.checked) {
+		nombre = 1
+
+	}
+	else if (papel.checked) {
+		nombre = 2;
+		
+	}
+	else if (tijeras.checked) {
+		nombre = 3;
+		
+	}
+	else if (lagarto.checked) {
+		nombre = 4;
+		
+	}
+	else if (spock.checked) {
+		nombre = 5;
+		
+	}
+
+
+//piedra
+
+	if (nombre == 1){ 
+		if (cpu==1) {
+			window.alert ("piedra vs piedra = empate")
+			cuentas.push("empatada")
+		}
+		else if ( cpu == 2){
+			window.alert ("piedra vs papel = pierdes")
+			cuentas.push("perdida")
+		}
+		
+		else if ( cpu == 3){
+			window.alert ("piedra vs tijeras = ganas")
+			cuentas.push("ganada")
+		}
+		else if ( cpu == 4){
+			window.alert ("piedra vs lagarto = ganas")
+			cuentas.push("ganada")
+		}
+		else if ( cpu == 5){
+			window.alert ("piedra vs spock = pierdes")
+			cuentas.push("perdida")
+		}
+	}
+
+
+
+
+//papel
+
+	if (nombre == 2){ 
+		if (cpu==1) {
+			window.alert ("papel vs piedra = ganas")
+			cuentas.push("ganada")
+		}
+		else if ( cpu == 2){
+			window.alert ("papel vs papel = empate")
+			cuentas.push("empatada")
+		}
+		
+		else if ( cpu == 3){
+			window.alert (" papel vs tijeras = pierdes")
+			cuentas.push("perdida")
+		}
+		else if ( cpu == 4){
+			window.alert (" papel vs lagarto = pierdes")
+			cuentas.push("perdida")
+		}
+		else if ( cpu == 5){
+			window.alert (" papel vs spock = ganas")
+			cuentas.push("ganada")
+		}
+	}
+
+
+
+
+
+
+
+//tijeras
+
+	if (nombre == 3){ 
+		if (cpu==1) {
+			window.alert ("tijeras vs piedra = pierdes")
+			cuentas.push("perdida")
+		}
+		else if ( cpu == 2){
+			window.alert ("tijeras vs papel = ganas")
+			cuentas.push("ganada")
+		}
+		
+		else if ( cpu == 3){
+			window.alert (" tijeras vs tijeras = empate")
+			cuentas.push("empate")
+		}
+		else if ( cpu == 4){
+			window.alert (" tijeras vs lagarto = ganas")
+			cuentas.push("ganada")
+		}
+		else if ( cpu == 5){
+			window.alert (" tijeras vs spock = pierdes")
+			cuentas.push("perdida")
+		}
+	}
+
+
+
+
+
+//lagarto
+
+	if (nombre == 4){ 
+		if (cpu==1) {
+			window.alert ("lagarto vs piedra = pierdes")
+			cuentas.push("perdida")
+		}
+		else if ( cpu == 2){
+			window.alert ("lagarto vs papel = ganas")
+			cuentas.push("ganada")
+		}
+		
+		else if ( cpu == 3){
+			window.alert (" lagarto vs tijeras = pierdes")
+			cuentas.push("perdida")
+		}
+		else if ( cpu == 4){
+			window.alert (" lagarto vs lagarto = empate")
+			cuentas.push("empatada")
+		}
+		else if ( cpu == 5){
+			window.alert (" lagarto vs spock = ganas")
+			cuentas.push("ganada")
+		}
+	}
+
+
+
+
+
+
+
+
+
+//spock
+	if (nombre == 5){ 
+		if (cpu==1) {
+			window.alert ("spock vs piedra = ganas")
+			cuentas.push("ganada")
+		}
+		else if ( cpu == 2){
+			window.alert ("spock vs papel = pierdes")
+			cuentas.push("perdida")
+		}
+		
+		else if ( cpu == 3){
+			window.alert (" spock vs tijeras = ganas")
+			cuentas.push("ganada")
+		}
+		else if ( cpu == 4){
+			window.alert (" spock vs lagarto = pierdes")
+			cuentas.push("perdida")
+		}
+		else if ( cpu == 5){
+			window.alert(" spock vs spock = empate")
+			cuentas.push("empatada")
+		}
+	}
+
+
+
+}
+		
+function recogerREsultados(){
+
+console.log(cuentas)
+}
+
+
+	</script>
+</form>
+
+</body>
+</html>
